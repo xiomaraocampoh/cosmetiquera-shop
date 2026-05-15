@@ -1,11 +1,18 @@
+import serumBioaqua from '../assets/products/serum-bioaqua.jpg';
+import pestaninaRubyrose from '../assets/products/pestanina-rubyrose.jpg';
+import protectorTrendy from '../assets/products/protector-trendy.jpg';
+import paletaAtenea from '../assets/products/paleta-atenea.jpg';
+import brochasMiis from '../assets/products/brochas-miis.jpg';
+import tonicoDolcebella from '../assets/products/tonico-dolcebella.jpg';
+
 const realCatalog = [
     {
       id: "P001",
       name: "Serum Vitamina C Bioaqua",
       brand: "Bioaqua",
       category: "Cuidado Facial",
-      price: 15000,
-      image: "/assets/products/serum-bioaqua.jpg",
+      price: 5269,
+      image: serumBioaqua,
       description: "Serum antioxidante e iluminador para el rostro."
     },
     {
@@ -14,7 +21,7 @@ const realCatalog = [
       brand: "Ruby Rose",
       category: "Maquillaje",
       price: 18000,
-      image: "/assets/products/pestanina-rubyrose.jpg",
+      image: pestaninaRubyrose,
       description: "Alargamiento y volumen resistente al agua."
     },
     {
@@ -23,7 +30,7 @@ const realCatalog = [
       brand: "Trendy",
       category: "Cuidado Facial",
       price: 35000,
-      image: "/assets/products/protector-trendy.jpg",
+      image: protectorTrendy,
       description: "Protección SPF 50+ de textura ligera y sin color."
     },
     {
@@ -32,7 +39,7 @@ const realCatalog = [
       brand: "Atenea",
       category: "Maquillaje",
       price: 45000,
-      image: "/assets/products/paleta-atenea.jpg",
+      image: paletaAtenea,
       description: "Paleta de 12 tonos neutros de alta pigmentación."
     },
     {
@@ -41,7 +48,7 @@ const realCatalog = [
       brand: "Miis Cosmetics",
       category: "Accesorios",
       price: 55000,
-      image: "/assets/products/brochas-miis.jpg",
+      image: brochasMiis,
       description: "Set de 10 brochas sintéticas para rostro y ojos."
     },
     {
@@ -50,7 +57,7 @@ const realCatalog = [
       brand: "Dolce Bella",
       category: "Cuidado Facial",
       price: 12000,
-      image: "/assets/products/tonico-dolcebella.jpg",
+      image: tonicoDolcebella,
       description: "Tónico facial hidratante y refrescante."
     }
   ];
