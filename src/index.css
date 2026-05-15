@@ -226,3 +226,28 @@ code {
 .page--contact a {
   color: var(--accent);
 }
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 5%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo-container {
+  flex-shrink: 0;
+}
+
+.main-logo {
+  display: block;
+  max-width: 150px; /* Tamaño controlado para escritorio */
+  height: auto;     /* Mantiene la proporción */
+}
+
+/* Mobile-first: Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .main-logo {
+      max-width: 100px; /* Reducción proporcional para móviles */
+  }
+}

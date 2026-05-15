@@ -1,39 +1,28 @@
-const navItems = [
-  { id: 'home', label: 'Inicio' },
-  { id: 'catalog', label: 'Catálogo' },
-  { id: 'contact', label: 'Contacto' },
-]
+import React from 'react';
+import { Link } from 'react-router-dom'; 
+import logo from '../assets/logo-cosmetiquera.jpg';
 
-export default function Header({ activePage, onNavigate }) {
-  return (
-    <header className="site-header">
-      <div className="site-header__inner">
-        <button
-          type="button"
-          className="site-logo"
-          onClick={() => onNavigate('home')}
-        >
-          Cosmetiquera
-        </button>
-        <nav className="site-nav" aria-label="Principal">
-          <ul>
-            {navItems.map(({ id, label }) => (
-              <li key={id}>
-                <button
-                  type="button"
-                  className={
-                    activePage === id ? 'site-nav__link is-active' : 'site-nav__link'
-                  }
-                  onClick={() => onNavigate(id)}
-                  aria-current={activePage === id ? 'page' : undefined}
-                >
-                  {label}
-                </button>
-              </li>
-            ))}
-          </ul>
-        </nav>
-      </div>
-    </header>
-  )
-}
+const Header = () => {
+    return (
+        <header className="main-header">
+            <div className="logo-container">
+                <Link to="/" aria-label="Volver al inicio">
+                    <img 
+                        src={logo} 
+                        alt="Logotipo oficial de Cosmetiquera Tienda de Belleza" 
+                        className="main-logo"
+                    />
+                </Link>
+            </div>
+            <nav className="main-nav">
+                <ul>
+                    <li><Link to="/">Inicio</Link></li>
+                    <li><Link to="/catalogo">Catálogo</Link></li>
+                    <li><Link to="/contacto">Contacto</Link></li>
+                </ul>
+            </nav>
+        </header>
+    );
+};
+
+export default Header;
